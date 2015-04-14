@@ -6,3 +6,22 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 body {
   padding-top: 70px;
 }
+.graph-box{
+	height: 350px;
+}
+.inves-table{
+	td{
+		height: 50px;
+		line-height: 50px;
+		vertical-align: middle !important;
+	}
+
+	img{
+		width: 30px;
+		height: 30px;
+		vertical-align: bottom;
+	}
+	.inves-title{
+		background-color: #eee;
+	}
+}
