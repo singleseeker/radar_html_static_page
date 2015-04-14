@@ -2,7 +2,8 @@
   "name": "radar-html",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0",
-    "modernizr": "~2.8.2"
+    "modernizr": "~2.8.2",
+    "morrisjs": "~0.5.1",
+    "bootstrap-sass": "~3.3.4"
   }
 }
