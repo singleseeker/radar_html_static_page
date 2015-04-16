@@ -1,41 +1,30 @@
+var investevent_percent_by_industry = echarts.init(document.getElementById('investevent_percent_by_industry'));
+var option = {
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient : 'vertical',
+        x : 'right',
+        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+    },
+    series : [
+        {
+            name:'行业分布占比',
+            type:'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[
+                {value:335, name:'直接访问'},
+                {value:310, name:'邮件营销'},
+                {value:234, name:'联盟广告'},
+                {value:135, name:'视频广告'},
+                {value:1548, name:'搜索引擎'}
+            ]
+        }
+    ]
+};
+investevent_percent_by_industry.setOption(option);
 
-// Use Morris.Bar
-var week_data = [
-  {"period": "2011 W27", "licensed": 3407, "sorned": 660},
-  {"period": "2011 W26", "licensed": 3351, "sorned": 629},
-  {"period": "2011 W25", "licensed": 3269, "sorned": 618},
-  {"period": "2011 W24", "licensed": 3246, "sorned": 661},
-  {"period": "2011 W23", "licensed": 3257, "sorned": 667},
-  {"period": "2011 W22", "licensed": 3248, "sorned": 627},
-  {"period": "2011 W21", "licensed": 3171, "sorned": 660},
-  {"period": "2011 W20", "licensed": 3171, "sorned": 676},
-  {"period": "2011 W19", "licensed": 3201, "sorned": 656},
-  {"period": "2011 W18", "licensed": 3215, "sorned": 622},
-  {"period": "2011 W17", "licensed": 3148, "sorned": 632},
-  {"period": "2011 W16", "licensed": 3155, "sorned": 681},
-  {"period": "2011 W15", "licensed": 3190, "sorned": 667},
-  {"period": "2011 W14", "licensed": 3226, "sorned": 620},
-  {"period": "2011 W13", "licensed": 3245, "sorned": null},
-  {"period": "2011 W12", "licensed": 3289, "sorned": null},
-  {"period": "2011 W11", "licensed": 3263, "sorned": null},
-  {"period": "2011 W10", "licensed": 3189, "sorned": null},
-  {"period": "2011 W09", "licensed": 3079, "sorned": null},
-  {"period": "2011 W08", "licensed": 3085, "sorned": null},
-  {"period": "2011 W07", "licensed": 3055, "sorned": null},
-  {"period": "2011 W06", "licensed": 3063, "sorned": null},
-  {"period": "2011 W05", "licensed": 2943, "sorned": null},
-  {"period": "2011 W04", "licensed": 2806, "sorned": null},
-  {"period": "2011 W03", "licensed": 2674, "sorned": null},
-  {"period": "2011 W02", "licensed": 1702, "sorned": null},
-  {"period": "2011 W01", "licensed": 1732, "sorned": null}
-];
-Morris.Line({
-  element: 'graph',
-  data: week_data,
-  xkey: 'period',
-  ykeys: ['licensed', 'sorned'],
-  labels: ['Licensed', 'SORN']
-}).on('click', function(i, row){
-  // console.log(i, row);
-  window.open("http://itjuzi.com/user/" + row.a,'_blank');
-});
+window.onresize = investevent_percent_by_industry.resize; 

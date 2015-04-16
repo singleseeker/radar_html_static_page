@@ -9,7 +9,6 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/morrisjs/morris.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -69,7 +68,9 @@
                   <h3 class="panel-title"> 2014年11月 投资事件行业分布（按数量）</h3>
                 </div>
                 <div class="panel-body">
-                  <div id="investevent_total_by_industry"></div>
+                  <div class="graph-box">
+                    <div style="height:350px;" id="investevent_total_by_industry"></div>
+                  </div>  
                 </div>
               </div>
             </div>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_percent_by_industry"></div>
+                    <div style="height:350px;" id="investevent_percent_by_industry"></div>
                   </div>
                 </div>
               </div>
@@ -95,7 +96,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_amount_by_us"></div>
+                    <div style="height:350px;" id="investevent_amount_by_us"></div>
                   </div>
                 </div>
               </div>
@@ -107,7 +108,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_amount_by_cn"></div>
+                    <div style="height:350px;" id="investevent_amount_by_cn"></div>
                   </div>
                 </div>
               </div>
@@ -119,7 +120,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_percent_by_currency"></div>
+                    <div style="height:350px;" id="investevent_percent_by_currency"></div>
                   </div>
                 </div>
               </div>
@@ -131,7 +132,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_total_by_currency"></div>
+                    <div style="height:350px;" id="investevent_total_by_currency"></div>
                   </div>
                 </div>
               </div>
@@ -143,7 +144,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_percent_by_round"></div>
+                    <div style="height:350px;" id="investevent_percent_by_round"></div>
                   </div>
                 </div>
               </div>
@@ -155,7 +156,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_total_by_round"></div>
+                    <div style="height:350px;" id="investevent_total_by_round"></div>
                   </div>
                 </div>
               </div>
@@ -167,7 +168,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_avg_time_by_angle"></div>
+                    <div style="height:350px;" id="investevent_avg_time_by_angle"></div>
                   </div>
                 </div>
               </div>
@@ -179,7 +180,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_avg_time_by_round_a"></div>
+                    <div style="height:350px;" id="investevent_avg_time_by_round_a"></div>
                   </div>
                 </div>
               </div>
@@ -191,7 +192,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_avg_time_by_round_b"></div>
+                    <div style="height:350px;" id="investevent_avg_time_by_round_b"></div>
                   </div>
                 </div>
               </div>
@@ -203,7 +204,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_avg_time_by_round_c"></div>
+                    <div style="height:350px;" id="investevent_avg_time_by_round_c"></div>
                   </div>
                 </div>
               </div>
@@ -215,7 +216,7 @@
                 </div>
                 <div class="panel-body">
                   <div class="graph-box">
-                    <div id="investevent_avg_time_by_round_d"></div>
+                    <div style="height:350px;" id="investevent_avg_time_by_round_d"></div>
                   </div>
                 </div>
               </div>
@@ -234,10 +235,8 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/raphael/raphael.js"></script>
-    <script src="bower_components/mocha/mocha.js"></script>
-    <script src="bower_components/morrisjs/morris.js"></script>
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/echarts/build/dist/echarts-all.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

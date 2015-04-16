@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "modernizr": "~2.8.2",
-    "morrisjs": "~0.5.1",
-    "bootstrap-sass": "~3.3.4"
+    "bootstrap-sass": "~3.3.4",
+    "echarts": "~2.2.1"
   }
 }
